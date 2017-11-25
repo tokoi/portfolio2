@@ -9,7 +9,7 @@ gem 'bootstrap-will_paginate', '1.0.0'
 gem 'carrierwave',             '1.1.0'
 gem 'mini_magick',             '4.7.0'
 gem 'fog',                     '1.40.0'
-gem 'rails_12factor', group: :production
+
 
 gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
@@ -41,7 +41,10 @@ end
 
 group :production do
   gem 'pg', '0.18.4'
+  gem 'rails_12factor'
 end
+
+
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

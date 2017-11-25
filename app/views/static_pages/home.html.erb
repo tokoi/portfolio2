@@ -14,10 +14,12 @@
     </aside>
     
     <div class="col-md-8">
-      <h3>Micropost Feed</h3>
+      <h3>今日のつぶやき</h3>
       <%= render 'shared/feed' %>
     </div>
   </div>
+  <iframe src="https://calendar.google.com/calendar/embed?src=s0sausb3rt4cp7adbcme3rbt84%40group.calendar.google.com&ctz=Asia/Tokyo" 
+style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 <% else %>
 
@@ -25,12 +27,11 @@
   <h1>Thank you for coming!</h1>
 
   <h2>
-    いつでも好きな時に自分の気持ちを友達とシェアしてみよう！
+    自分の今の気持ちを、友達とシェア！
   </h2>
 
   <%= link_to "サインアップ", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
-
 
             
 <% end %>          
