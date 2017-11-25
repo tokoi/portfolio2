@@ -1,5 +1,5 @@
 <%= @user.name %>さん,
 
-つぶやき広場にようこそ！アカウントを有効化する場合は、下のリンクを押してください:
+スケジュール管理/情報共有アプリにようこそ！アカウントを有効化する場合は、下のリンクを押してください:
 
 <%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
